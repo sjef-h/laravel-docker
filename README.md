@@ -6,4 +6,4 @@ Laravel-Docker is a basic setup for running Laravel applications locally with Do
 
 ### Clone
 
-- Clone this repo to your local machine using `https://github.com/sjefh/laravel-docker`
+- Clone this repo to your local machine using 'https://github.com/sjef-h/laravel-docker'
