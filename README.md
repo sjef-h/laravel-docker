@@ -16,7 +16,7 @@ $ git clone https://github.com/laravel/laravel.git YOUR_PROJECT_NAME
 
 - First run a `composer install` in the `YOUR_PROJECT_NAME`-folder:
 ```shell
-$ docker run --rm --interactive --tty --volume $PWD:/app composer install
+$ docker run --rm --interactive --tty --user $(id -u):$(id -g) --volume $PWD:/app composer install
 ```
 - Rename the `.env.example` file to `.env`:
 ```shell
