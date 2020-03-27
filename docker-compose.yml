@@ -46,11 +46,11 @@ services:
 
   php:
     build:
-      context: ./src
+      context: ./${LOCAL_WORKING_DIR}
       dockerfile: ../Dockerfile
     container_name: php
     volumes:
-      - ./src:/var/www
+      - ./${LOCAL_WORKING_DIR}:/var/www
     ports:
       - "9000:9000"
     networks:
