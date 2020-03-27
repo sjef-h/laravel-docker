@@ -14,9 +14,17 @@ $ git clone https://github.com/laravel/laravel.git YOUR_PROJECT_NAME
 
 ### Setup
 
-- Copy the `.env.example` file to `.env`:
+- First run a `composer install` in the `YOUR_PROJECT_NAME`-folder:
 ```shell
-$ cp .env.example .env
+$ docker run --rm --interactive --tty --volume $PWD:/app composer install
+```
+- Rename the `.env.example` file to `.env`:
+```shell
+$ mv .env.example .env
 ```
 - Change the variables in the `.env`-file to work with your environment.
-- Change the value of `LOCAL_WORKING_DIR` to point to the folder which contains your project.
+- Change the value of `LOCAL_WORKING_DIR` in the `.env`-file to point to the folder which contains your project.
+- Create and run the containers:
+```shell
+$ docker-compose up -d
+```
