@@ -28,7 +28,10 @@ $ mv .env.example .env
 ```shell
 $ docker-compose up -d
 ```
-- Rename the `.env.example` file to `.env` in the `YOUR_PROJECT_NAME`-folder.
+- Rename the `.env.example` file to `.env` in the `YOUR_PROJECT_NAME`-folder:
+```shell
+$ mv .env.example .env
+```
 - Change `DB_CONNECTION` to `mysql` in the `.env` file.
 - Change `DB_DATABASE`, `DB_USERNAME` and `DB_PASSWORD` so they match the settings in the `.env`-file in the root folder.
 - Run in the root folder:
